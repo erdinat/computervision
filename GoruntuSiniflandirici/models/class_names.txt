@@ -1,0 +1,5 @@
+elefante
+farfalla
+gatto
+pecora
+ragno

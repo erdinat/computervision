@@ -181,7 +181,33 @@ Model performansı şu metriklerle ölçülür:
 - **Recall**: Duyarlılık (weighted average)
 - **F1-Score**: Precision ve Recall'un harmonik ortalaması
 
-Eğitim sırasında bu metrikler her epoch sonunda yazdırılır ve en iyi model kaydedilir.
+### 🎯 Eğitim Sonuçları
+
+Model, Animals-10 veri setinin 5 sınıfı (fil, kelebek, kedi, koyun, örümcek) üzerinde eğitilmiştir.
+
+**Veri Seti İstatistikleri:**
+- Eğitim örnekleri: 1,573
+- Test örnekleri: 397
+- Sınıf sayısı: 5
+
+**En İyi Model Performansı (Epoch 2):**
+
+| Metrik | Değer |
+|--------|-------|
+| **Training Accuracy** | 79.02% |
+| **Validation Accuracy** | **86.15%** |
+| **Precision** | 87.73% |
+| **Recall** | 86.15% |
+| **F1-Score** | 86.03% |
+
+**Eğitim İlerlemesi:**
+
+| Epoch | Train Loss | Train Acc | Val Loss | Val Acc | Precision | Recall | F1-Score |
+|-------|------------|-----------|----------|---------|-----------|--------|----------|
+| 1 | 0.7789 | 74.51% | 1.5105 | 57.18% | 67.18% | 57.18% | 53.95% |
+| 2 | 0.5623 | 79.02% | 0.3835 | **86.15%** | **87.73%** | 86.15% | 86.03% |
+
+Model, transfer learning (ResNet18, ImageNet pretrained) kullanarak başarılı bir şekilde eğitilmiştir. Validation accuracy'de %86.15'e ulaşılması, modelin yeni görüntüleri sınıflandırmada oldukça başarılı olduğunu göstermektedir.
 
 ## 📚 Veri Setleri
 
@@ -208,14 +234,6 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 **Erdinat**
 
 - GitHub: [@erdinat](https://github.com/erdinat)
-
-## 🙏 Teşekkürler
-
-- PyTorch ekibine
-- Streamlit ekibine
-- Veri seti sağlayıcılarına
-
----
 
 ⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
 

@@ -240,4 +240,3 @@ def prepare_data_loaders(
     class_names = train_dataset.classes
     
     return train_loader, val_loader, class_names
-

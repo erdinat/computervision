@@ -149,4 +149,3 @@ def predict(
         })
     
     return results
-

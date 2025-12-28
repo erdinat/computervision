@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Mac
+.DS_Store
+
+# Model files (opsiyonel - büyük dosyalar için)
+# models/*.pth
+
+# Data (büyük veri setleri için)
+# data/
+
+# Logs
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints/

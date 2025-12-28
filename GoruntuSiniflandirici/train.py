@@ -116,7 +116,5 @@ def main():
         f.write('\n'.join(class_names))
     print(f"Sınıf isimleri kaydedildi: {class_names_path}")
 
-
 if __name__ == "__main__":
     main()
-

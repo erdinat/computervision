@@ -131,4 +131,3 @@ class ImagePreprocessor:
                 t.mul_(s).add_(m)
             tensor = torch.clamp(tensor, 0, 1)
             return tensor.permute(1, 2, 0).cpu().numpy()
-
