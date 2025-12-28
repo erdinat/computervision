@@ -73,8 +73,16 @@ streamlit run app.py
 #### Uygulama Arayüzü
 ![Arayüz İlk Sayfa](screenshots/arayuz_ilk_sayfa.png)
 
-#### Tahmin Sonucu
+#### Tahmin Örnekleri
+
+**Kedi Tahmini:**
 ![Tahmin Sonucu](screenshots/tahmin_sonucu.png)
+
+**Fil Tahmini:**
+![Fil Tahmini](screenshots/fil.png)
+
+**Kelebek Tahmini:**
+![Kelebek Tahmini](screenshots/kelebek.png)
 
 ## Proje Yapısı
 
