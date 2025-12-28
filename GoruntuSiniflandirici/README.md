@@ -84,6 +84,10 @@ streamlit run app.py
 **Kelebek Tahmini:**
 ![Kelebek Tahmini](screenshots/kelebek.png)
 
+### Demo Video
+
+Uygulamanın kullanımını gösteren kısa video: [Demo Video](screenshots/demo_video.mov)
+
 ## Proje Yapısı
 
 ```
