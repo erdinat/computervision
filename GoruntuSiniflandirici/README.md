@@ -80,6 +80,14 @@ streamlit run app.py
    - Sidebar'dan model yolu ve sınıf sayısını ayarlayabilirsiniz
    - Sınıf isimlerini virgülle ayırarak girebilirsiniz
 
+### 📸 Ekran Görüntüleri
+
+#### Uygulama Arayüzü
+![Arayüz İlk Sayfa](screenshots/arayuz_ilk_sayfa.png)
+
+#### Tahmin Sonucu
+![Tahmin Sonucu](screenshots/tahmin_sonucu.png)
+
 ## 📁 Proje Yapısı
 
 ```
@@ -91,6 +99,10 @@ GoruntuSiniflandirici/
 │
 ├── models/                 # Eğitilen modellerin (.pth) kaydedileceği yer
 │   └── best_model.pth
+│
+├── screenshots/            # Uygulama ekran görüntüleri
+│   ├── arayuz_ilk_sayfa.png
+│   └── tahmin_sonucu.png
 │
 ├── src/                    # Kaynak kodlar (Core logic)
 │   ├── __init__.py
