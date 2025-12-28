@@ -1,28 +1,16 @@
-# 🖼️ Yapay Zeka Destekli Görüntü Sınıflandırıcı
+# Yapay Zeka Destekli Görüntü Sınıflandırıcı
 
-Bu proje, transfer learning kullanarak görüntüleri sınıflandıran bir yapay zeka uygulamasıdır. PyTorch ile eğitilmiş ResNet18 modeli kullanılarak geliştirilmiştir ve Streamlit ile kullanıcı dostu bir web arayüzü sunar.
+Bu proje, PyTorch kullanarak görüntü sınıflandırma yapan bir yapay zeka uygulamasıdır. ResNet18 modeli ile transfer learning kullanılarak geliştirilmiş olup, Streamlit ile basit bir web arayüzü sunmaktadır.
 
-## 📋 İçindekiler
+## Özellikler
 
-- [Özellikler](#özellikler)
-- [Kurulum](#kurulum)
-- [Kullanım](#kullanım)
-- [Proje Yapısı](#proje-yapısı)
-- [Model Eğitimi](#model-eğitimi)
-- [Teknik Detaylar](#teknik-detaylar)
-- [Veri Setleri](#veri-setleri)
-- [Değerlendirme Metrikleri](#değerlendirme-metrikleri)
+- Kullanıcılar bilgisayarlarından görüntü yükleyebilir
+- Görüntüler otomatik olarak normalize edilir ve yeniden boyutlandırılır
+- Transfer learning ile eğitilmiş ResNet18 modeli kullanılır
+- En yüksek 5 tahmin olasılık değerleriyle gösterilir
+- Streamlit ile kullanıcı dostu web arayüzü
 
-## ✨ Özellikler
-
-- 🎯 **Görüntü Yükleme**: Kullanıcılar bilgisayarlarından görüntü yükleyebilir
-- 🔄 **Otomatik Ön İşleme**: Görüntüler otomatik olarak normalize edilir ve yeniden boyutlandırılır
-- 🤖 **AI Sınıflandırma**: Transfer learning ile eğitilmiş ResNet18 modeli kullanılır
-- 📊 **Detaylı Sonuçlar**: En yüksek 5 tahmin olasılık değerleriyle gösterilir
-- 🎨 **Modern Arayüz**: Streamlit ile kullanıcı dostu web arayüzü
-- 📈 **Görselleştirme**: Tahmin sonuçları bar chart ile görselleştirilir
-
-## 🚀 Kurulum
+## Kurulum
 
 ### Gereksinimler
 
@@ -50,7 +38,7 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-## 📖 Kullanım
+## Kullanım
 
 ### Web Arayüzünü Çalıştırma
 
@@ -80,7 +68,7 @@ streamlit run app.py
    - Sidebar'dan model yolu ve sınıf sayısını ayarlayabilirsiniz
    - Sınıf isimlerini virgülle ayırarak girebilirsiniz
 
-### 📸 Ekran Görüntüleri
+### Ekran Görüntüleri
 
 #### Uygulama Arayüzü
 ![Arayüz İlk Sayfa](screenshots/arayuz_ilk_sayfa.png)
@@ -88,7 +76,7 @@ streamlit run app.py
 #### Tahmin Sonucu
 ![Tahmin Sonucu](screenshots/tahmin_sonucu.png)
 
-## 📁 Proje Yapısı
+## Proje Yapısı
 
 ```
 GoruntuSiniflandirici/
@@ -116,7 +104,7 @@ GoruntuSiniflandirici/
 └── README.md               # Dokümantasyon
 ```
 
-## 🎓 Model Eğitimi
+## Model Eğitimi
 
 ### Veri Seti Hazırlama
 
@@ -155,7 +143,7 @@ Eğitim parametreleri:
 - `--learning_rate`: Öğrenme oranı (varsayılan: 0.001)
 - `--model_save_path`: Model kayıt yolu (varsayılan: models/best_model.pth)
 
-## 🔧 Teknik Detaylar
+## Teknik Detaylar
 
 ### Model Mimarisi
 
@@ -184,7 +172,7 @@ Eğitim parametreleri:
 - **Scheduler**: StepLR (her 5 epoch'ta 0.1 ile çarpılır)
 - **Loss Function**: CrossEntropyLoss
 
-## 📊 Değerlendirme Metrikleri
+## Değerlendirme Metrikleri
 
 Model performansı şu metriklerle ölçülür:
 
@@ -193,7 +181,7 @@ Model performansı şu metriklerle ölçülür:
 - **Recall**: Duyarlılık (weighted average)
 - **F1-Score**: Precision ve Recall'un harmonik ortalaması
 
-### 🎯 Eğitim Sonuçları
+### Eğitim Sonuçları
 
 Model, Animals-10 veri setinin 5 sınıfı (fil, kelebek, kedi, koyun, örümcek) üzerinde eğitilmiştir.
 
@@ -221,7 +209,7 @@ Model, Animals-10 veri setinin 5 sınıfı (fil, kelebek, kedi, koyun, örümcek
 
 Model, transfer learning (ResNet18, ImageNet pretrained) kullanarak başarılı bir şekilde eğitilmiştir. Validation accuracy'de %86.15'e ulaşılması, modelin yeni görüntüleri sınıflandırmada oldukça başarılı olduğunu göstermektedir.
 
-## 📚 Veri Setleri
+## Kullanılan Veri Setleri
 
 Proje şu veri setleriyle test edilmiştir:
 
@@ -229,23 +217,10 @@ Proje şu veri setleriyle test edilmiştir:
 2. **Animals-10**: 10 hayvan sınıfı
 3. **CIFAR-10**: 10 genel obje sınıfı
 
-## 🤝 Katkıda Bulunma
+## Geliştirici
 
-1. Fork edin
-2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request açın
-
-## 📝 Lisans
-
-Bu proje eğitim amaçlı geliştirilmiştir.
-
-## 👤 Yazar
-
-**Erdinat**
-
+**Erdinat Alihan**
 - GitHub: [@erdinat](https://github.com/erdinat)
 
-⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
+> Bu proje eğitim amaçlı geliştirilmiştir.
 
